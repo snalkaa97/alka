@@ -1,0 +1,108 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+
+.navigasi {
+    opacity: 1;
+}
+
+.navigasi a:hover {
+    color: #1e90ff;
+}
+
+.jumbotron img {
+    height: 150px;
+    margin-top: 30px;
+}
+
+.jumbotron h1 {
+    margin-top: 10px;
+}
+
+.jumbotron h1,
+.jumbotron p {
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.jumbotron {
+    background-image: url('../img/thumbs/5.png');
+    background-size: cover;
+    background-position: 0 -100;
+    overflow: hidden;
+}
+
+#about .p1 {
+    width: 50%;
+}
+
+#about {
+    min-height: 400;
+}
+
+#portfolio,
+#contact {
+    min-height: 700;
+}
+
+.p1,
+.p2 {
+    opacity: 0;
+}
+
+.p1 {
+    transform: translate(-100px, 0);
+    transition: 1s;
+}
+
+
+
+p {
+    text
+}
+
+.p2 {
+    transform: translate(100px, 0);
+    transition: 1s;
+}
+
+.p1.pMuncul,
+.p2.pMuncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.portfolio .thumbnail {
+    opacity: 0;
+    transform: translate(0, 40px);
+    transition: .7s;
+
+}
+
+.portfolio .thumbnail.muncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.portfolio a:hover {
+    text-decoration: none;
+    color: #1e90ff;
+
+}
+
+.contact img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.contact {
+    opacity: 0;
+    transform: translate(-200px, 0);
+    transition: 1.5s;
+}
+
+.contact.muncul2 {
+    opacity: 1;
+    transform: translate(0, 0);
+}
