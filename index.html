@@ -26,10 +26,20 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-item nav-link" href="index.html">Home</a>
-              <a class="nav-item nav-link" href="#about">About</a>
-              <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
-              <a class="nav-item nav-link" href="#contact">Contact</a>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item" id="about">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item" id="portfolio">
+                  <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item" id="contact">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -43,26 +53,20 @@
       <h1>SYAIFUDIN ALKATIRI</h1>
       <p class="text-light blockquote">Coding | Eating | Sleeping</p>
     </div>
-
-    <div class="container text-light" id="about">
+    
+    <div class="container text-light" id="about1">
       <h2 class="text-center">About Me</h2>
       <hr />
-      <div class="row">
-        <div class="col-sm-4">
+      <div class="row justify-content-center">
+        <div class="col-sm-6 text-justify">
+          <p class="p1"> 
           Born in Bogor, West Java on November 19, 1997. Then took Informatics
-          Engineering at the Universitas Muhammadiyah Jakarta in 2016.
-        </div>
-        <div class="col-sm-4">
-          I haven't graduate, but Insya Allah will graduate this year. I love
-          coding at night with a coffee and some foods like Indomie
-        </div>
-        <div class="col-sm-4">
-          After graduate, I want to work at start up as Web Developer. Aamiin..
+          Engineering at the Universitas Muhammadiyah Jakarta in 2016. I am graduate at July 2020, now I'm looking for a job as Web Developer. </p>
         </div>
       </div>
     </div>
 
-    <div class="portfolio" id="portfolio">
+    <div class="portfolio" id="portfolio1">
       <div class="container">
         <h2 class="text-center text-light">Portfolio</h2>
         <hr />
@@ -73,10 +77,10 @@
 
               <div class="card-footer clearfix small z-1">
                 <h5 class="text-primary">
-                  Sistem Monitoring Satwa (SITROOM) Kementerian KLHK
+                  Sistem Pendukung Keputusan Dosen dan Tendik Terbaik FTUMJ (Skripsi)
                 </h5>
                 <p class="text-light">
-                  Implement UI Dashboard
+                 Perbandingan Metode Weighted Product dan Simple Additve Weigting.
                 </p>
               </div>
             </a>
@@ -109,7 +113,7 @@
         </div>
       </div>
     </div>
-    <div class="contact" id="contact">
+    <div class="contact" id="contact1">
       <div class="container text-light">
         <h2 class="text-center">
           Contact
@@ -185,6 +189,7 @@
         </div>
       </div>
     </footer>
+    <a href="#" class="scrollToTop">Scroll To Top</a>
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>

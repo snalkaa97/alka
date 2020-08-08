@@ -9,6 +9,11 @@
 // });
 
 
+$('.nav-link').on('click', function () {
+    $('.nav-link').removeClass('active');
+    $(this).addClass('active');
+
+})
 //paralax
 //about
 $(window).on('load', function () {
@@ -34,7 +39,7 @@ $(window).scroll(function () {
     });
 
 
-    if (wScroll > $('.portfolio').offset().top - 300) {
+    if (wScroll > $('.portfolio').offset().top - 100) {
         $('.portfolio .thumbnail').each(function (i) {
             setTimeout(function () {
                 $('.portfolio .thumbnail').eq(i).addClass('muncul');
@@ -42,7 +47,42 @@ $(window).scroll(function () {
         });
 
     }
-    if (wScroll > $('.contact').offset().top - 300) {
+    if (wScroll > $('.contact').offset().top - 100) {
         $('.contact').addClass('muncul2');
     }
+});
+
+$('#about').on('click', function (e) {
+    e.preventDefault();
+    $('html,body').animate({
+        scrollTop: $('#about1').offset().top
+    }, 1000);
+});
+$('#portfolio').on('click', function (e) {
+    e.preventDefault();
+    $('html,body').animate({
+        scrollTop: $('#portfolio1').offset().top
+    }, 1000);
+});
+$('#contact').on('click', function (e) {
+    e.preventDefault();
+    $('html,body').animate({
+        scrollTop: $('#contact1').offset().top
+    }, 1000);
+});
+
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+        $('.scrollToTop').fadeIn();
+    } else {
+        $('.scrollToTop').fadeOut();
+    }
+});
+
+//Click event to scroll to top
+$('.scrollToTop').click(function () {
+    $('html, body').animate({
+        scrollTop: 0
+    }, 900);
+    return false;
 });
