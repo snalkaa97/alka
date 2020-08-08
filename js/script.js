@@ -71,13 +71,13 @@ $('#contact').on('click', function (e) {
     }, 1000);
 });
 
-$(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
-        $('.scrollToTop').fadeIn();
-    } else {
-        $('.scrollToTop').fadeOut();
-    }
-});
+// $(window).scroll(function () {
+//     if ($(this).scrollTop() > 100) {
+//         $('.scrollToTop').fadeIn();
+//     } else {
+//         $('.scrollToTop').fadeOut();
+//     }
+// });
 
 //Click event to scroll to top
 $('.scrollToTop').click(function () {
