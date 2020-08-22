@@ -43,12 +43,12 @@
 }
 
 #about1 {
-    min-height: 200;
+    min-height: 100;
 }
 
 #portfolio1,
 #contact1 {
-    min-height: 700;
+    min-height: 600;
 }
 
 .p1,
