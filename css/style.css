@@ -11,7 +11,7 @@
 
 .jumbotron img {
     height: 150px;
-    margin-top: 30px;
+    margin-top: 0px;
 }
 
 .jumbotron h1 {
@@ -25,9 +25,9 @@
 }
 
 .jumbotron {
-    background-image: url('../img/thumbs/6.png');
+    background-image: url('../img/kucing.jpg');
     background-size: cover;
-    background-position: 0 -100;
+    background-position: 5;
     overflow: hidden;
 }
 
