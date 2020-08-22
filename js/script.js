@@ -86,3 +86,30 @@ $('.scrollToTop').click(function () {
     }, 900);
     return false;
 });
+
+
+
+//API YOUTUBE
+function videoYoutube() {
+    $('#youtube-video').html('');
+    $('#info-youtube').html('');
+    $.getJSON('https://www.googleapis.com/youtube/v3/search?key=AIzaSyDf4A3QslbqOmyc7TrcUEuO6v2dN6gOGqA&channelId=UC6uxkYqqOyk8aROOcmoyalA&maxResults=1&order=date&part=snippet', function (data) {
+        //const videoId = console.log(data.items[0].id.videoId);
+        const link = `https://www.youtube.com/embed/` + data.items[0].id.videoId + `?rel=0`
+        //const video = concate("", videoId);
+        console.log(link);
+        const title = data.items[0].snippet.channelTitle;
+        console.log(title);
+
+
+        $('#youtube-video').html(`
+        <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="` + link + `"
+          allowfullscreen></iframe>
+      </div>
+        `)
+
+    });
+}
+
+videoYoutube();

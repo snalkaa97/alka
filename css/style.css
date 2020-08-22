@@ -31,6 +31,16 @@
     overflow: hidden;
 }
 
+.ig-thumbnail {
+    width: 100px;
+    height: 100px;
+    float: left;
+    overflow: hidden;
+}
+
+.ig-thumbnail img {
+    width: 100px;
+}
 
 #about1 {
     min-height: 200;
