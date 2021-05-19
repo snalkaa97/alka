@@ -1,125 +1,131 @@
 @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 
 .navigasi {
-  opacity: 1;
+	opacity: 1;
 }
 
 .navigasi a:hover {
-  color: #1e90ff;
+	color: #1e90ff;
 }
 
 .jumbotron img {
-  height: 150px;
-  margin-top: 0px;
+	height: 150px;
+	margin-top: 0px;
 }
 
 .jumbotron h1 {
-  margin-top: 10px;
+	margin-top: 10px;
 }
 
 .jumbotron h1,
 .jumbotron p {
-  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
-  color: white;
+	text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+	color: white;
 }
 
 .jumbotron {
-  background-image: url("../img/kucing.JPG");
-  background-size: cover;
-  background-position: 5;
-  overflow: hidden;
+	background-image: url("../img/kucing.JPG");
+	background-size: cover;
+	background-position: 5;
+	overflow: hidden;
 }
 
 .ig-thumbnail {
-  width: 100px;
-  height: 100px;
-  float: left;
-  overflow: hidden;
+	width: 100px;
+	height: 100px;
+	float: left;
+	overflow: hidden;
 }
 
 .ig-thumbnail img {
-  width: 100px;
+	width: 100px;
 }
 
 #about1 {
-  min-height: 100;
+	min-height: 400;
+}
+#portfolio1 {
+	min-height: 100;
 }
 
-#portfolio1,
+#work1 {
+	min-height: 400;
+}
+
 #contact1 {
-  min-height: 600;
+	min-height: 600;
 }
 
 .p1,
 .p2 {
-  opacity: 0;
+	opacity: 0;
 }
 
 .p1 {
-  transform: translate(-100px, 0);
-  transition: 1s;
+	transform: translate(-100px, 0);
+	transition: 1s;
 }
 
 .p2 {
-  transform: translate(100px, 0);
-  transition: 1s;
+	transform: translate(100px, 0);
+	transition: 1s;
 }
 
 .p1.pMuncul,
 .p2.pMuncul {
-  opacity: 1;
-  transform: translate(0, 0);
+	opacity: 1;
+	transform: translate(0, 0);
 }
 
 .portfolio .thumbnail {
-  opacity: 0;
-  transform: translate(0, 40px);
-  transition: 0.7s;
+	opacity: 0;
+	transform: translate(0, 40px);
+	transition: 0.7s;
 }
 
 .portfolio .thumbnail.muncul {
-  opacity: 1;
-  transform: translate(0, 0);
+	opacity: 1;
+	transform: translate(0, 0);
 }
 
 .portfolio a:hover {
-  text-decoration: none;
-  color: #1e90ff;
+	text-decoration: none;
+	color: #1e90ff;
 }
 
 .contact img {
-  width: 300px;
-  height: 300px;
-  border-radius: 10px;
-  margin-top: 30px;
+	width: 300px;
+	height: 300px;
+	border-radius: 10px;
+	margin-top: 30px;
 }
 
 .contact {
-  opacity: 0;
-  transform: translate(-200px, 0);
-  transition: 1.5s;
+	opacity: 0;
+	transform: translate(-200px, 0);
+	transition: 1.5s;
 }
 
 .contact.muncul2 {
-  opacity: 1;
-  transform: translate(0, 0);
+	opacity: 1;
+	transform: translate(0, 0);
 }
 
 .scrollToTop {
-  padding: 10px;
-  text-align: center;
-  background: whiteSmoke;
-  font-weight: bold;
-  color: #444;
-  text-decoration: none;
+	padding: 10px;
+	text-align: center;
+	background: whiteSmoke;
+	font-weight: bold;
+	color: #444;
+	text-decoration: none;
 
-  bottom: 75px;
-  right: 0px;
-  background: url("arrow_up.png") no-repeat 0px 20px;
+	bottom: 75px;
+	right: 0px;
+	background: url("arrow_up.png") no-repeat 0px 20px;
 }
 
 .scrollToTop:hover {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 @import "susy";
@@ -128,49 +134,52 @@
 .stars,
 .twinkling,
 .clouds {
-  position: absolute;
-  display: block;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
+	position: absolute;
+	display: block;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .stars {
-  z-index: 0;
-  background: #000 url("https://image.ibb.co/mjnygo/stars.png") repeat top center;
+	z-index: 0;
+	background: #000 url("https://image.ibb.co/mjnygo/stars.png") repeat top
+		center;
 }
 
 .twinkling {
-  z-index: 1;
-  background: transparent url("https://image.ibb.co/ir1DE8/twinkling.png") repeat top center;
-  animation: move-twink-back 200s linear infinite;
+	z-index: 1;
+	background: transparent url("https://image.ibb.co/ir1DE8/twinkling.png")
+		repeat top center;
+	animation: move-twink-back 200s linear infinite;
 }
 
 .clouds {
-  z-index: 2;
-  background: transparent url("https://image.ibb.co/bT4N7T/clouds.png") repeat top center;
-  animation: move-clouds-back 200s linear infinite;
+	z-index: 2;
+	background: transparent url("https://image.ibb.co/bT4N7T/clouds.png") repeat
+		top center;
+	animation: move-clouds-back 200s linear infinite;
 }
 
 @keyframes move-twink-back {
-  from {
-    background-position: 0 0;
-  }
+	from {
+		background-position: 0 0;
+	}
 
-  to {
-    background-position: -10000px 5000px;
-  }
+	to {
+		background-position: -10000px 5000px;
+	}
 }
 
 @keyframes move-clouds-back {
-  from {
-    background-position: 0 0;
-  }
+	from {
+		background-position: 0 0;
+	}
 
-  to {
-    background-position: 10000px 0;
-  }
+	to {
+		background-position: 10000px 0;
+	}
 }
